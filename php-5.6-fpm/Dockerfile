@@ -49,7 +49,7 @@ RUN apt-get install -y openssl libssl-dev && pecl install mongodb && docker-php-
 # 安装 php 扩展 memcached
 
 RUN apt-get install -y libmemcached-dev zlib1g-dev \
-    && pecl install memcached && docker-php-ext-enable memcached
+    && pecl install memcached-2.2.0 && docker-php-ext-enable memcached
     
 # 安装 php 扩展 iconv mcrypt gd
 

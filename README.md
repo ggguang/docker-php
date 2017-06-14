@@ -4,9 +4,13 @@
 
 > <a href="https://github.com/ggguang/docker-php/blob/master/php-7.1-fpm/Dockerfile" title="Dockerfile">php-7.1-fpm Dockerfile</a>
 
+> > php-7.1 不支持 mcrypt 扩展
+
 > <a href="https://github.com/ggguang/docker-php/blob/master/php-7.0-fpm/Dockerfile" title="Dockerfile">php-7.0-fpm Dockerfile</a>
 
 > <a href="https://github.com/ggguang/docker-php/blob/master/php-5.6-fpm/Dockerfile" title="Dockerfile">php-5.6-fpm Dockerfile</a>
+
+> > php-5.6 为老旧项目准备 
 
 ### FROM `php:x.x-fmp`
 
