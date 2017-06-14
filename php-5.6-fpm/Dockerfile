@@ -70,21 +70,21 @@ RUN apt-get install -y \
 # pecl php7 install 报错 error: 'zval' has no member named 'type'
 #
 
-# RUN pecl install xhprof-0.9.4 && docker-php-ext-enable xhprof
+RUN pecl install xhprof-0.9.4 && docker-php-ext-enable xhprof
 
-RUN cd ~ \
-    && git clone https://github.com/longxinH/xhprof.git ./xhprof \
-    && cd ./xhprof/extension/ \
-    && phpize \
-    && ./configure --with-php-config=/usr/local/bin/php-config \
-    && make && make install \
-    && mkdir -p /php/xhprof/data \
-    && cd /usr/local/etc/php/conf.d \
-    && touch docker-php-ext-xhprof.ini \
-    && echo "extension = xhprof.so" >> docker-php-ext-xhprof.ini \
-    && echo "xhprof.output_dir = /php/xhprof/data" >> docker-php-ext-xhprof.ini \
-    && cd ~ \
-    && rm -rf xhprof
+#RUN cd ~ \
+#    && git clone https://github.com/longxinH/xhprof.git ./xhprof \
+#    && cd ./xhprof/extension/ \
+#    && phpize \
+#    && ./configure --with-php-config=/usr/local/bin/php-config \
+#    && make && make install \
+#    && mkdir -p /php/xhprof/data \
+#    && cd /usr/local/etc/php/conf.d \
+#    && touch docker-php-ext-xhprof.ini \
+#    && echo "extension = xhprof.so" >> docker-php-ext-xhprof.ini \
+#    && echo "xhprof.output_dir = /php/xhprof/data" >> docker-php-ext-xhprof.ini \
+#    && cd ~ \
+#    && rm -rf xhprof
 
 # 安装 php 扩展 pdo_mysql
 

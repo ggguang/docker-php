@@ -96,6 +96,8 @@ RUN apt-get install -y openssl libssl-dev && pecl install mongodb && docker-php-
 
 > 默认安装 pecl.php.net 的 memcached 最新 stable 版本
 
+> > php 5.6 请安装 memcached-2.2.0 版本
+
 ```
 
 RUN apt-get install -y libmemcached-dev zlib1g-dev \
