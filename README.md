@@ -8,6 +8,8 @@
 
 > <a href="https://github.com/ggguang/docker-php/blob/master/php-7.0-fpm/Dockerfile" title="Dockerfile">php-7.0-fpm Dockerfile</a>
 
+> > php-7.0 默认为 latest
+
 > <a href="https://github.com/ggguang/docker-php/blob/master/php-5.6-fpm/Dockerfile" title="Dockerfile">php-5.6-fpm Dockerfile</a>
 
 > > php-5.6 为老旧项目准备 
@@ -129,6 +131,8 @@ RUN apt-get install -y \
 > pecl.php.net 的 xhprof 没有 stable 版，最后版本 xhprof-0.9.4.tgz 发布时间 2013-09-30 
 
 > pecl php7 install 报错 error: 'zval' has no member named 'type'
+
+> pecl install xhprof 适合 php-5.6
 
 > > RUN pecl install xhprof-0.9.4 && docker-php-ext-enable xhprof
 
