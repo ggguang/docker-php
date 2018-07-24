@@ -89,7 +89,7 @@ RUN cd ~ \
 
 RUN docker-php-ext-install pdo_mysql
 
-# 按住 php 扩展 zip
+# 安装 php 扩展 zip
 
 RUN docker-php-ext-install zip
     
