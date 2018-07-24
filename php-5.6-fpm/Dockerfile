@@ -89,6 +89,10 @@ RUN pecl install xhprof-0.9.4 && docker-php-ext-enable xhprof
 # 安装 php 扩展 pdo_mysql
 
 RUN docker-php-ext-install pdo_mysql
+
+# 安装 php 扩展 zip
+
+RUN docker-php-ext-install zip
     
 # 开启 php-fpm 错误日志
 
